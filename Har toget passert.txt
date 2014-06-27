@@ -1,0 +1,25 @@
+Har toget passert - arbeidsfil
+
+<h3><img src="tog.png"/>Har toget mitt passert?</h3>
+<p>Linje:<select><option>L13</option></select></p>
+<p>Retning<select><option>Drammen</option><option>Dal</option></select></p>
+
+
+'Drammen':
+'Brakerøya':
+'Lier':
+'Asker':
+'Sandvika':
+'Lysaker':
+'Skøyen':
+'Nationaltheatret':
+'Oslo S':
+'Lillestrøm':
+'Leirsund':
+'Frogner':
+'Lindeberg':
+'Kløfta':
+'Jessheim':
+'Nordby':
+'Hauerseter':
+'Dal':

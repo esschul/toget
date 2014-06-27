@@ -1,0 +1,29 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
+  <title>Hvor er toget mitt?</title>
+</head>
+
+<body>
+  {{> train}}
+
+  <p id="declaration">
+  Denne tjenesten bruker <a href="http://labs.ruter.no/">labs.ruter.no</a> sitt åpne sanntids api.
+  </p>
+
+</body>
+
+<template name="train">
+	<div class="main-content">
+	<h3><img src="tog.png" width="30px"/> Hvor er toget mitt?</h3>
+	<p>Linje <select id="line"><option>L13</option></select> Retning <select id="direction"><option>Drammen</option><option>Dal</option></select></p>
+	<table cellspacing="0" cellpadding="0">
+	   {{#each stops}}
+	      {{> stop}}
+	    {{/each}}
+	</table>
+	</div>
+</template>
+
+<template name="stop">
+	<tr><td class="stopp">{{stop}}</td><td id="{{trainid}}" class="har-passert {{status}}"></td></tr>
+</template>
