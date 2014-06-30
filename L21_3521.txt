@@ -1,20 +1,11 @@
-"ID":3012500,
-"Name":"Skøyen [tog]",
-"ID":1045160,
-"Name":"Moss [tog]",
-"ID":1040200,
-"Name":"Kambo [tog]",
-"ID":3010030,
-"Name":"Nationaltheatret [tog]",
-"ID":2110300,
-"Name":"Sonsveien [tog]",
-"ID":3010010,
-"Name":"Oslo Sentralstasjon [tog]",
-"ID":2110100,
-"Name":"Vestby [tog]",
-"ID":2170100,
-"Name":"Kolbotn [tog]",
-"ID":2140200,
-"Name":"Ås [tog]",
-"ID":2130300,
-"Name":"Ski [tog]",
+{stop:'Skøyen',stopid:3012500,status:'',trainid:''}
+{stop:'Nationaltheatret',stopid:3010030,status:'',trainid:''}
+{stop:'Oslo Sentralstasjon',stopid:3010010,status:'',trainid:''}
+{stop:'Kolbotn',stopid:2170100,status:'',trainid:''}
+{stop:'Ski',stopid:2130300,status:'',trainid:''}
+{stop:'Ås',stopid:2140200,status:'',trainid:''}
+{stop:'Kambo',stopid:1040200,status:'',trainid:''}
+{stop:'Vestby',stopid:2110100,status:'',trainid:''}
+{stop:'Sonsveien',stopid:2110300,status:'',trainid:''}
+{stop:'Moss',stopid:1045160,status:'',trainid:''}
+

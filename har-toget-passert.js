@@ -175,6 +175,8 @@ var setLineToGreen =   function(line){
     updateLine('L13','Dal');
     updateLine('L2','Skøyen');
     updateLine('L2','Ski');
+    updateLine('L21','Moss');
+    updateLine('L21','Skøyen');
   }
 
   var trainIsOnTheStation = function(train,result){ 
@@ -227,12 +229,6 @@ var setLineToGreen =   function(line){
   Meteor.setInterval(updateLines, 10 * 60000);
   Meteor.setTimeout(updateLines, 5000);
 
-  // Stop status:
-  // 0 - Not passed
-  // 1 - Will be arriving
-  // 2 - Previous train
-  // 3 - Have passed
-  // 0 and 1 must be updated.
 
   Meteor.startup(function () {
     Line.insert({
@@ -248,7 +244,7 @@ var setLineToGreen =   function(line){
         {stop:'Lysaker',stopid:3012550,status:'',trainid:''},
         {stop:'Skøyen',stopid:3012500,status:'',trainid:''},
         {stop:'Nationaltheatret',stopid:3010030,status:'',trainid:''},
-        {stop:'Oslo S',stopid:3010010,status:'',trainid:''},
+        {stop:'Oslo Sentralstasjon',stopid:3010010,status:'',trainid:''},
         {stop:'Lillestrøm',stopid:2310300,status:'',trainid:''},
         {stop:'Leirsund',stopid:2310240,status:'',trainid:''},
         {stop:'Frogner',stopid:2260060,status:'',trainid:''},
@@ -275,7 +271,7 @@ var setLineToGreen =   function(line){
         {stop:'Frogner',stopid:2260060,status:'',trainid:''},
         {stop:'Leirsund',stopid:2310240,status:'',trainid:''},
         {stop:'Lillestrøm',stopid:2310300,status:'',trainid:''},
-        {stop:'Oslo S',stopid:3010010,status:'',trainid:''},
+        {stop:'Oslo Sentralstasjon',stopid:3010010,status:'',trainid:''},
         {stop:'Nationaltheatret',stopid:3010030,status:'',trainid:''},
         {stop:'Skøyen',stopid:3012500,status:'',trainid:''},
         {stop:'Lysaker',stopid:3012550,status:'',trainid:''},
@@ -332,6 +328,42 @@ var setLineToGreen =   function(line){
         {stop:'Oslo Sentralstasjon',stopid:3010010,status:'',trainid:''},
         {stop:'Nationaltheatret',stopid:3010030,status:'',trainid:''},
         {stop:'Skøyen',stopid:3012500,status:'',trainid:''}
+      ]
+    });
+
+    Line.insert({
+      'lineNo' : 'L21',
+      'destination' :'Moss',
+      'trains': [],
+      'stops' : [
+        {stop:'Skøyen',stopid:3012500,status:'',trainid:''},
+        {stop:'Nationaltheatret',stopid:3010030,status:'',trainid:''},
+        {stop:'Oslo Sentralstasjon',stopid:3010010,status:'',trainid:''},
+        {stop:'Kolbotn',stopid:2170100,status:'',trainid:''},
+        {stop:'Ski',stopid:2130300,status:'',trainid:''},
+        {stop:'Ås',stopid:2140200,status:'',trainid:''},
+        {stop:'Vestby',stopid:2110100,status:'',trainid:''},
+        {stop:'Sonsveien',stopid:2110300,status:'',trainid:''},
+        {stop:'Kambo',stopid:1040200,status:'',trainid:''},
+        {stop:'Moss',stopid:1045160,status:'',trainid:''}
+      ]
+    });
+
+    Line.insert({
+      'lineNo' : 'L21',
+      'destination' :'Skøyen',
+      'trains': [],
+      'stops' : [
+      {stop:'Moss',stopid:1045160,status:'',trainid:''},
+      {stop:'Kambo',stopid:1040200,status:'',trainid:''},
+      {stop:'Sonsveien',stopid:2110300,status:'',trainid:''},
+      {stop:'Vestby',stopid:2110100,status:'',trainid:''},
+      {stop:'Ås',stopid:2140200,status:'',trainid:''},
+      {stop:'Ski',stopid:2130300,status:'',trainid:''},
+      {stop:'Kolbotn',stopid:2170100,status:'',trainid:''},
+      {stop:'Oslo Sentralstasjon',stopid:3010010,status:'',trainid:''},
+      {stop:'Nationaltheatret',stopid:3010030,status:'',trainid:''},
+      {stop:'Skøyen',stopid:3012500,status:'',trainid:''}
       ]
     });
 
