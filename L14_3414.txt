@@ -1,0 +1,1 @@
+[{"X":632140,"Y":6659815,"Zone":"4N","ShortName":"HAGA","IsHub":false,"ID":2360100,"Name":"Haga [tog]","District":"Nes","PlaceType":null},{"X":634620,"Y":6663365,"Zone":"4N","ShortName":"BODU","IsHub":false,"ID":2360710,"Name":"Bodung [tog]","District":"Nes","PlaceType":null}]

@@ -1,0 +1,1 @@
+[{"X":554008,"Y":6625028,"Zone":"","ShortName":"","IsHub":false,"ID":6256570,"Name":"Steinberg [tog]","District":"Nedre Eiker","PlaceType":null},{"X":556841,"Y":6624117,"Zone":"","ShortName":"","IsHub":false,"ID":6256295,"Name":"Mjøndalen [tog]","District":"Nedre Eiker","PlaceType":null}]

@@ -1,0 +1,27 @@
+    Line.insert({
+      'lineNo' : 'L13',
+      'destination' :'Drammen',
+      'trains': [],
+      'stops' : [
+		{stop:'Drammen',stopid:6021000,status:'green':trainid:''}
+		{stop:'Brakerøya',stopid:6029020,status:'green':trainid:''}
+		{stop:'Lier',stopid:6264170,status:'green':trainid:''}
+		{stop:'Asker',stopid:2200500,status:'green':trainid:''}
+		{stop:'Sandvika',stopid:2190400,status:'green':trainid:''}
+		{stop:'Lysaker',stopid:3012550,status:'green':trainid:''}
+		{stop:'Skøyen',stopid:3012500,status:'green':trainid:''}
+		{stop:'Nationaltheatret',stopid:3010030,status:'green':trainid:''}
+		{stop:'Oslo Sentralstasjon',stopid:3010010,status:'green':trainid:''}
+		{stop:'Lillestrøm',stopid:2310300,status:'green':trainid:''}
+		{stop:'Leirsund',stopid:2310240,status:'green':trainid:''}
+		{stop:'Frogner',stopid:2260060,status:'green':trainid:''}
+		{stop:'Lindeberg',stopid:2260050,status:'green':trainid:''}
+		{stop:'Kløfta',stopid:2350005,status:'green':trainid:''}
+		{stop:'Jessheim',stopid:2350200,status:'green':trainid:''}
+		{stop:'Nordby',stopid:2350040,status:'green':trainid:''}
+		{stop:'Hauerseter',stopid:2350030,status:'green':trainid:''}
+      ]
+    });
+
+
+

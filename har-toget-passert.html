@@ -1,6 +1,8 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes"/>
   <title>Hvor er toget mitt?</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 </head>
 
 <body>
@@ -14,8 +16,23 @@
 
 <template name="train">
 	<div class="main-content">
-	<h3><img src="tog.png" width="30px"/> Hvor er toget mitt?</h3>
-	<p>Linje <select id="line"><option>L13</option></select> Retning <select id="direction"><option>Drammen</option><option>Dal</option></select></p>
+	<img class="train-header" src="train-header.png" width="40px"/>
+	<h3>Hvor er toget mitt?</h3>
+	
+
+	<p>
+		<span id="line-select">
+		Linje <select id="line">
+		<option>L13</option>
+		<option>L2</option>
+		<option>L3</option>
+		<option>L12</option>
+		<option>L14</option>
+		<option>L21</option>
+		<option>L22</option>
+	</select></span>
+		<span id="direction-select"> Retning <select id="direction"><option>Drammen</option><option>Dal</option></select></span>
+	</p>
 	<table cellspacing="0" cellpadding="0">
 	   {{#each stops}}
 	      {{> stop}}
@@ -25,5 +42,5 @@
 </template>
 
 <template name="stop">
-	<tr><td class="stopp">{{stop}}</td><td id="{{trainid}}" class="har-passert {{status}}"></td></tr>
+	<tr><td id="{{trainid}}" class="first-column {{status}}"></td><td class="second-column {{status}}">{{stop}}</td></tr>
 </template>

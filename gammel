@@ -1,0 +1,74 @@
+    var updateLine2 = function(lineNo,destination) {      
+        console.log("Updating line (Start) : " + lineNo + " - " + destination);    
+          var line = Line.findOne({lineNo:lineNo, destination:destination});
+          var trains = [];
+          var previousTrain;
+          var status = "green";
+          for (var i = 0; i < line.stops.length; i++) {
+            var station = line.stops[i];
+            var departureDate;
+            var trainExpectedOnThisStop;
+            if(line.stops !== undefined){
+              var result = callRuter(station.stop,station.stopid);
+
+              if(result === -1) {station.status="red"; continue;}
+
+              var obj = JSON.parse(result.content);              
+              var pTrainDate;
+              for (var j = 0; j < obj.length; j++) {
+                var pTrain = obj[j]
+                if(pTrain.ExpectedDepartureTime !== null && pTrain.DestinationName === destination && pTrain.PublishedLineName === lineNo){
+                  var d = pTrain.ExpectedDepartureTime.replace("/Date(","").replace("+0200)/","")
+                  pTrainDate = new Date(parseInt(d));
+                } 
+                if(pTrainDate !== undefined){
+                  if(departureDate === undefined || departureDate>pTrainDate){
+                    departureDate=pTrainDate;   
+                    trainExpectedOnThisStop = pTrain.FramedVehicleJourneyRef.DatedVehicleJourneyRef;
+                  }
+                }
+              } 
+          };
+
+          if(departureDate !== undefined){
+              var hours = departureDate.getHours()
+              var minutes = departureDate.getMinutes()
+              
+              if (hours < 10 ){ hours= "0"+hours}
+              if (minutes < 10 ){ minutes= "0"+minutes}
+
+              if(status==="train"){
+                status="green"
+              }
+
+              if(previousTrain !== undefined && previousTrain !== trainExpectedOnThisStop){
+                status="train";
+                station.trainid = trainExpectedOnThisStop;
+              } else {
+                station.trainid = '';
+              }
+
+              // Register train on line
+              if(status==="train"){    
+                var seenBefore = false;            
+                for (var k = 0; k < line.trains.length; k++) {
+                  if(line.trains[k].trainid === trainExpectedOnThisStop){
+                    console.log("Train was last seen on " + line.trains[k].lastSeenOn);                  
+                    line.trains[k].lastSeenOn = i;
+                    seenBefore=true;
+                  }
+                };
+                if(!seenBefore){
+                  console.log(line.lineNo + " is registering train " + trainExpectedOnThisStop); 
+                  line.trains.push({trainid:trainExpectedOnThisStop,lastSeenOn:i});
+                }
+              }
+
+              station.status = status;
+              previousTrain = trainExpectedOnThisStop;
+          }
+          
+      } 
+      console.log("Updating line  (Stop) : " + lineNo + " - " + destination);
+      Line.update({lineNo: lineNo, destination : destination},line);
+  }

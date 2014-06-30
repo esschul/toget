@@ -1,15 +1,34 @@
 /* CSS declarations go here */
-body {font-family: helvetica,sans-serif;}
-#declaration { font-size: 10px}
+body {font-family: 'Open Sans', sans-serif; text-transform: uppercase;}
 
-td { border-top: 1px #ddd solid; border-spacing: 0; padding:8px;}
-td.stopp { padding-right :10px;}
-td.har-passert { text-align: center;}
-td.har-passert.ja { background : #dff0d8;}
-td.har-passert.train { background: url('tog.png') no-repeat;background-size: contain;width: 30px;}
-td.har-passert.green { background: #e8edff;}
-td.har-passert.yellow { background : #F2B50F;}
-td.har-passert.red { background: #B33A3A;}
+
+img.train-header{margin-left: 5px;vertical-align: middle;}
+h3 {display:inline; font-size: 20px;width:30px;}
+
+#line-select{margin-left: 10px;}
+#direction-select{margin-left: 20px;}
+
+select.option { bakground-color:#F47A00;}
+
+table{ margin-left: 50px;}
+td {border-spacing: 0; padding:8px;}
+td.second-column {vertical-align: top; position:static; margin-top:-5px; text-transform: uppercase; min-width:240px; padding-top:0;padding-bottom:15px;padding-right :10px;}
+td.first-column { min-width:20px;text-align: center;}
+td.first-column.train {width:28px; background: url('train.png') no-repeat -40%;height:39px;}
+td.train.second-column:before{content: "- "}
+td.train.second-column { color :#F47A00; padding-left:0;}
+/*td.first-column.L2 { background: #02B1D2;} */ td.first-column.L2 { background: url('no-train.png') no-repeat}
+/*td.first-column.L3 { background: #69C83E;} */ td.first-column.L3 { background: url('no-train.png') no-repeat}
+/*td.first-column.L12{ background: #E90002;} */ td.first-column.L12{ background: url('no-train.png') no-repeat}
+/*td.first-column.L13{ background: #F47A00;} */ td.first-column.L13{ background: url('no-train.png') no-repeat}
+/*td.first-column.L14{ background: #F9B201;} */ td.first-column.L14{ background: url('no-train.png') no-repeat}
+/*td.first-column.L21{ background: #69C83E;} */ td.first-column.L21{ background: url('no-train.png') no-repeat}
+/*td.first-column.L22{ background: #0075A2;} */ td.first-column.L22{ background: url('no-train.png') no-repeat}
+
+td.first-column.yellow { background : #F2B50F;}
+td.first-column.red {  background: url('no-train.png') no-repeat}
+
+#declaration { font-size: 10px;text-transform: lowercase;}
 
 @media screen and (max-width:500px) {
 	table{width:100%;}
