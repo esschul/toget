@@ -7,11 +7,12 @@ h3 {font-weight: 700;display:inline-block; font-size: 19px;white-space: nowrap;v
 
 #line-select{margin-left: 10px;}
 #direction-select{margin-left:5px;}
-#line{-webkit-appearance: none;font-size:14px;color:#fff;background-color:#F47A00;padding: 5px;}
-#direction{font-size:14px;color:#fff;background-color:#F47A00;-webkit-appearance: none;padding: 5px;}
-select option:after{content:'V';}
+#line{-moz-appearance:none;  -webkit-border-radius: 0px; -webkit-appearance: none;font-size:14px;color:#fff;background-color:#F47A00;padding: 5px;}
+#direction{font-size:14px;color:#fff;background-color:#F47A00;-moz-appearance:none;  -webkit-border-radius: 0px;
+-webkit-appearance: none;padding: 5px;}
 
-table{ margin-left: 50px;}
+
+table{ margin-left: 50px;margin-top: 25px;}
 td {border-spacing: 0; padding:8px;}
 td.second-column {vertical-align: top; position:static; margin-top:-5px; text-transform: uppercase; min-width:240px; padding-top:0;padding-bottom:15px;padding-right :10px;}
 td.first-column { min-width:20px;text-align: center;}
