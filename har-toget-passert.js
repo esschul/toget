@@ -79,16 +79,39 @@ if (Meteor.isClient) {
 
 if (Meteor.isServer) {
 
+  var chachedCalls = []
+
   var callRuter = function(stop,stopid){
-    console.log(stop + " - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/"+stopid);
-    var returnThis;
-    try {
-      returnThis = HTTP.call("GET", "http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/"+stopid);
-    } catch(err) {
-      console.log("Problem getting " + stop);
+    var result = findCachedStation(stopid);
+    if(result === undefined){
+      console.log(stop + " - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/"+stopid);
+      var returnThis;
+      try {
+        result = HTTP.call("GET", "http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/"+stopid);
+        cacheStation(stopid,result);
+      } catch(err) {
+        console.log("Problem getting " + stop);
+      }
     }
-    return returnThis;
+    return result;
   };
+
+
+  var cacheStation = function(stopid,result){
+    chachedCalls.push({stopid:stopid,result:result})
+  }
+
+  var findCachedStation = function(stopid) {
+    if( stopid === undefined ) return undefined;
+    for (var i = 0; i < chachedCalls.length; i++) {
+        if (chachedCalls[i].stopid  !== undefined && chachedCalls[i].stopid === stopid) {
+            console.log("Found cached result for " + stopid);
+            return chachedCalls.result;
+        }
+    }
+    return undefined;
+  }
+
 
   var containsTrain = function(a, train) {
     if( train === undefined ) return false;
@@ -126,21 +149,20 @@ if (Meteor.isServer) {
     return train;
   }
 
-var setLineToGreen =   function(line){  
-    line.stops.forEach(function(stop){          
-        stop.status=line.lineNo;
-        stop.trainid="";
-    });  
-    return line;
-}
-
+  var removeAllTrainsFromStations = function(line){  
+      line.stops.forEach(function(stop){          
+          stop.status=line.lineNo;
+          stop.trainid="";
+      });  
+      return line;
+  }
 
   var updateLine = function(lineNo,destination) {      
         var trains = [];
         var firstTrain;
         console.log("Updating line (Start) : " + lineNo + " - " + destination);    
         
-        var line = setLineToGreen(Line.findOne({lineNo:lineNo, destination:destination}));        
+        var line = removeAllTrainsFromStations(Line.findOne({lineNo:lineNo, destination:destination}));        
         for (var i = 0; i < line.stops.length; i++) {
           var station = line.stops[i];
           var result = callRuter(station.stop,station.stopid);
@@ -170,6 +192,7 @@ var setLineToGreen =   function(line){
 
  
   var updateLines = function(){
+    chachedCalls = [];
     console.log("Updating lines");
     updateLine('L13','Drammen');
     updateLine('L13','Dal');
@@ -177,6 +200,7 @@ var setLineToGreen =   function(line){
     updateLine('L2','Ski');
     updateLine('L21','Moss');
     updateLine('L21','Skøyen');
+    chachedCalls = [];
   }
 
   var trainIsOnTheStation = function(train,result){ 
@@ -193,9 +217,9 @@ var setLineToGreen =   function(line){
   
   var updateTrains = function(){
     console.log("Updating trains (start)");
-
+    chachedCalls = [];
     Line.find({}).forEach(function(line){
-    line = setLineToGreen(line);
+    line = removeAllTrainsFromStations(line);
 
     line.trains.forEach(function(train){          
           var lastSeenStop = line.stops[train.lastSeenOn];
@@ -221,6 +245,7 @@ var setLineToGreen =   function(line){
       });
       Line.update({_id:line._id},line);
     });
+    chachedCalls = [];
     console.log("Updating trains (stop)");
   }
   
