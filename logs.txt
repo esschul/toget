@@ -1,0 +1,192 @@
+[Fri Jul 04 2014 13:00:17 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:17 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:18 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:18 GMT+0000 (UTC)] INFO log-callRuter():Skotbu - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2130600
+[Fri Jul 04 2014 13:00:18 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter():Tomter - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1380100
+[Fri Jul 04 2014 13:00:18 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:18 GMT+0000 (UTC)] INFO log-callRuter():Knapstad - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1380120
+[Fri Jul 04 2014 13:00:18 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter():Spydeberg - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1230600
+[Fri Jul 04 2014 13:00:19 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter():Askim - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1240700
+[Fri Jul 04 2014 13:00:19 GMT+0000 (UTC)] INFO log-callRuter():Slitu - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1255340
+[Fri Jul 04 2014 13:00:19 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:19 GMT+0000 (UTC)] INFO log-callRuter():Mysen - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1250100
+[Fri Jul 04 2014 13:00:19 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:20 GMT+0000 (UTC)] INFO log-callRuter():Eidsberg - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1255370
+[Fri Jul 04 2014 13:00:20 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:20 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:20 GMT+0000 (UTC)] INFO log-callRuter():Heia - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1285380
+[Fri Jul 04 2014 13:00:20 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:20 GMT+0000 (UTC)] INFO log-callRuter():Rakkestad - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1285390
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-updateLine(): stop L22 - Rakkestad
+
+
+
+
+log-updateLine(): start L22 - Skøyen
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-updateLine(): No train on station : Ski
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-updateLine(): No train on station : Holmlia
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-updateLine(): Train 1922_2014-07-04_14:38 on station : Oslo Sentralstasjon
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-updateLine(): No train on station : Nationaltheatret
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-updateLine(): stop L22 - Skøyen
+[Fri Jul 04 2014 13:00:21 GMT+0000 (UTC)] INFO log-initLines(): stop Initiating lines
+[Fri Jul 04 2014 13:00:24 GMT+0000 (UTC)] INFO HIT / 155.55.49.12
+[Fri Jul 04 2014 13:00:24 GMT+0000 (UTC)] INFO HIT /dc2d7b687b47ab75ca2899579b19e2b84cc54038.js 155.55.49.12
+[Fri Jul 04 2014 13:00:28 GMT+0000 (UTC)] INFO HIT /no-train.png 155.55.49.12
+[Fri Jul 04 2014 13:00:28 GMT+0000 (UTC)] INFO HIT /tog.png 155.55.49.12
+[Fri Jul 04 2014 13:00:32 GMT+0000 (UTC)] INFO 
+
+log-updateTrains(): start
+[Fri Jul 04 2014 13:00:32 GMT+0000 (UTC)] INFO Found 14 lines with trains
+[Fri Jul 04 2014 13:00:32 GMT+0000 (UTC)] INFO log-updateTrains(): Train 1121_2014-07-04_14:08 - which was last seen on Kambo
+log-updateTrains(): line.stops.length =10 and train.lastSeenOn =8
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Kambo - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1040200
+[Fri Jul 04 2014 13:00:32 GMT+0000 (UTC)] INFO log-updateTrains(): L21 - Moss line.trains ->  1
+[Fri Jul 04 2014 13:00:32 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:32 GMT+0000 (UTC)] INFO log-callRuter():Moss - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/1045160
+[Fri Jul 04 2014 13:00:33 GMT+0000 (UTC)] INFO log-updateTrains(): line.stops.length =10 and train.lastSeenOn =5
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Ski - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2130300
+[Fri Jul 04 2014 13:00:33 GMT+0000 (UTC)] INFO log-updateTrains(): L21 - Skøyen line.trains ->  1
+log-updateTrains(): Train 1122_2014-07-04_14:31 - which was last seen on Ski
+[Fri Jul 04 2014 13:00:33 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter():Kolbotn - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2170100
+[Fri Jul 04 2014 13:00:33 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+[Fri Jul 04 2014 13:00:34 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+[Fri Jul 04 2014 13:00:34 GMT+0000 (UTC)] INFO log-updateTrains(): L22 - Rakkestad line.trains ->  0
+[Fri Jul 04 2014 13:00:34 GMT+0000 (UTC)] INFO log-updateTrains(): L3 - Jaren line.trains ->  1
+log-updateTrains(): Train 241_2014-07-04_13:42 - which was last seen on Gran
+[Fri Jul 04 2014 13:00:34 GMT+0000 (UTC)] INFO log-updateTrains(): line.stops.length =18 and train.lastSeenOn =16
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Gran - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/5349503
+[Fri Jul 04 2014 13:00:34 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+[Fri Jul 04 2014 13:00:34 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter():Jaren - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/5349414
+[Fri Jul 04 2014 13:00:35 GMT+0000 (UTC)] INFO log-updateTrains(): L12 - Kongsberg line.trains ->  2
+[Fri Jul 04 2014 13:00:35 GMT+0000 (UTC)] INFO log-updateTrains(): Train 521_2014-07-04_14:31 - which was last seen on Oslo Sentralstasjon
+log-updateTrains(): line.stops.length =17 and train.lastSeenOn =4
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Oslo Sentralstasjon - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010010
+[Fri Jul 04 2014 13:00:35 GMT+0000 (UTC)] INFO log-callRuter():Nationaltheatret - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3010030
+[Fri Jul 04 2014 13:00:35 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:36 GMT+0000 (UTC)] INFO log-updateTrains(): line.stops.length =17 and train.lastSeenOn =13
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Hokksund - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/6246600
+[Fri Jul 04 2014 13:00:36 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+
+log-updateTrains(): Train 519_2014-07-04_13:31 - which was last seen on Hokksund
+[Fri Jul 04 2014 13:00:36 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter():Vestfossen - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/6246004
+[Fri Jul 04 2014 13:00:36 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): L3 - Oslo S line.trains ->  0
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): Train 2744_2014-07-04_14:43 - which was last seen on Solbråtan
+log-updateTrains(): line.stops.length =16 and train.lastSeenOn =6
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Solbråtan - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2170200
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): L2 - Skøyen line.trains ->  1
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): !theTrainHasMoved.
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): Train 2741_2014-07-04_14:56 - which was last seen on Nationaltheatret
+log-updateTrains(): line.stops.length =16 and train.lastSeenOn =1
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): L2 - Ski line.trains ->  2
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): Train 2739_2014-07-04_14:26 - which was last seen on Greverud
+log-updateTrains(): line.stops.length =16 and train.lastSeenOn =11
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Greverud - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2170300
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+[Fri Jul 04 2014 13:00:37 GMT+0000 (UTC)] INFO HIT /_GALAXY_ 155.55.49.12
+[Fri Jul 04 2014 13:00:38 GMT+0000 (UTC)] INFO log-callRuter():Oppegård - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2170400
+[Fri Jul 04 2014 13:00:38 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:38 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+[Fri Jul 04 2014 13:00:38 GMT+0000 (UTC)] INFO log-callRuter():Mjøndalen - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/6256295
+[Fri Jul 04 2014 13:00:38 GMT+0000 (UTC)] INFO log-updateTrains(): Train 522_2014-07-04_14:35 - which was last seen on Hokksund
+log-updateTrains(): line.stops.length =17 and train.lastSeenOn =3
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:38 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:38 GMT+0000 (UTC)] INFO log-updateTrains(): L12 - Eidsvoll line.trains ->  2
+[Fri Jul 04 2014 13:00:39 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+
+log-updateTrains(): Train 520_2014-07-04_13:35 - which was last seen on Lillestrøm
+[Fri Jul 04 2014 13:00:39 GMT+0000 (UTC)] INFO log-updateTrains(): line.stops.length =17 and train.lastSeenOn =13
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Lillestrøm - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2310300
+[Fri Jul 04 2014 13:00:39 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Oslo Lufthavn - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2350350
+[Fri Jul 04 2014 13:00:40 GMT+0000 (UTC)] INFO log-updateTrains(): L13 - Drammen line.trains ->  3
+log-updateTrains(): Train 1642_2014-07-04_14:53 - which was last seen on Hauerseter
+[Fri Jul 04 2014 13:00:40 GMT+0000 (UTC)] INFO log-updateTrains(): line.stops.length =18 and train.lastSeenOn =1
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Hauerseter - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2350030
+[Fri Jul 04 2014 13:00:40 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter():Nordby - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2350040
+[Fri Jul 04 2014 13:00:40 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-updateTrains(): Train 1640_2014-07-04_14:23 - which was last seen on Lillestrøm
+log-updateTrains(): line.stops.length =18 and train.lastSeenOn =8
+log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-findCachedStation(): Looking for cached result.
+log-callRuter(): Using cached result
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-updateTrains(): Train 1638_2014-07-04_13:53 - which was last seen on Lysaker
+log-updateTrains(): line.stops.length =18 and train.lastSeenOn =12
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Lysaker - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/3012550
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-updateTrains(): theTrainHasMoved. checking next station.
+log-findCachedStation(): Looking for cached result.
+[Fri Jul 04 2014 13:00:41 GMT+0000 (UTC)] INFO log-callRuter():Sandvika - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/2190400
+[Fri Jul 04 2014 13:00:42 GMT+0000 (UTC)] INFO log-updateTrains(): it is on the next station.
+[Fri Jul 04 2014 13:00:42 GMT+0000 (UTC)] INFO log-updateTrains(): Train 1643_2014-07-04_15:05 - which was last seen on Drammen
+log-updateTrains(): line.stops.length =18 and train.lastSeenOn =0
+log-findCachedStation(): Looking for cached result.
+log-callRuter():Drammen - http://reis.trafikanten.no/reisrest/realtime/getrealtimedata/6021000
+[Fri Jul 04 2014 13:00:42 GMT+0000 (UTC)] INFO log-updateTrains(): L13 - Dal line.trains ->  3
