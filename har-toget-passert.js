@@ -239,6 +239,9 @@ if (Meteor.isServer) {
         console.log("log-updateTrains(): Train " + train.trainid + " - which was last seen on " + lastSeenStop.stop);
         console.log("log-updateTrains(): line.stops.length =" + line.stops.length+" and train.lastSeenOn =" + train.lastSeenOn)
 
+        var handled = false;
+
+
           if((line.stops.length -1) === train.lastSeenOn) {
               console.log("log-updateTrains(): Was last seen on last station. removing.\n");
               var t = []
@@ -248,6 +251,7 @@ if (Meteor.isServer) {
                 }
               };
             line.trains = t;
+            handled = true;
           } else {
 
           var theTrainHasMoved = false;
@@ -262,6 +266,7 @@ if (Meteor.isServer) {
             console.log("log-updateTrains(): !theTrainHasMoved.")
             lastSeenStop.status="train";
             lastSeenStop.trainid=train.trainid;
+            handled = true;
           } else if(theTrainHasMoved && line.stops.length !== train.lastSeenOn) {
               console.log("log-updateTrains(): theTrainHasMoved. checking next station.")
                var nextStationResult = callRuter( nextStop.stop ,nextStop.stopid)
@@ -274,17 +279,26 @@ if (Meteor.isServer) {
                   } else {
                     console.log("log-updateTrains(): it is on the next station.\n");
                   }
+                
+                  handled = true;
                 }  
           } else {
             console.log("log-updateTrains(): Train should have been, but isn't at the next stop.\n");
           }
 
-          // If not, where can it be?
+         // If not, where can it be?
           // if there was a problem getting the station, maybe we can say next station anyway?
           //} else if(){
           }
           }      
       Line.update({_id:line._id},line);
+
+      if(handled === false) { 
+        console.log("\n\nThings weren't handled properly. Reloading the whole line.")
+
+        updateLine(line.lineNo,line.destination);
+      }
+
     });
         console.log("log-updateTrains(): stop\n\n");
 
