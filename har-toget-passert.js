@@ -314,26 +314,9 @@ if (Meteor.isServer) {
     cachedCalls = [];
         console.log("\n\nlog-initLines(): start Initiating lines");
 
-    updateLine('L2','Skøyen');
-    updateLine('L2','Ski');
-
-    updateLine('L3','Oslo S');
-    updateLine('L3','Jaren');
-
-    updateLine('L12','Kongsberg');
-    updateLine('L12','Eidsvoll');
-
-    updateLine('L13','Drammen');
-    updateLine('L13','Dal');
-
-    updateLine('L14','Asker');
-    updateLine('L14','Kongsvinger');
-
-    updateLine('L21','Moss');
-    updateLine('L21','Skøyen');
-
-    updateLine('L22','Rakkestad');
-    updateLine('L22','Skøyen');
+    Line.find({}).forEach(function(line){
+      updateLine(line.lineNo,line.destination);
+    });
 
     cachedCalls = [];
     reportProblems();
@@ -358,7 +341,6 @@ if (Meteor.isServer) {
     }
     return false;
   }
-
 
   var registerNewTrains = function(){
       cachedCalls = [];
@@ -389,6 +371,7 @@ if (Meteor.isServer) {
   Meteor.setInterval(registerNewTrains, 4 * 60000); // Add new trains to track
   Meteor.setInterval(makeSureTrainsAreOnLine, 10 * 60000); // Add new trains to track
   Meteor.setInterval(updateTrains, 60000); // Update location of previously tracked trains.
+  Meteor.setInterval(initLines, 30 * 60000); // Clean up every half hour
 
 
   Meteor.startup(function () {
